@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/web-app-voice-react/static/css/main.09c30232.css",
-    "main.js": "/web-app-voice-react/static/js/main.eada47db.js",
-    "static/js/453.54cde324.chunk.js": "/web-app-voice-react/static/js/453.54cde324.chunk.js",
-    "index.html": "/web-app-voice-react/index.html",
-    "main.09c30232.css.map": "/web-app-voice-react/static/css/main.09c30232.css.map",
-    "main.eada47db.js.map": "/web-app-voice-react/static/js/main.eada47db.js.map",
-    "453.54cde324.chunk.js.map": "/web-app-voice-react/static/js/453.54cde324.chunk.js.map"
+    "main.css": "/web-app-voice-react/build/static/css/main.09c30232.css",
+    "main.js": "/web-app-voice-react/build/static/js/main.17413228.js",
+    "static/js/453.54cde324.chunk.js": "/web-app-voice-react/build/static/js/453.54cde324.chunk.js",
+    "index.html": "/web-app-voice-react/build/index.html",
+    "main.09c30232.css.map": "/web-app-voice-react/build/static/css/main.09c30232.css.map",
+    "main.17413228.js.map": "/web-app-voice-react/build/static/js/main.17413228.js.map",
+    "453.54cde324.chunk.js.map": "/web-app-voice-react/build/static/js/453.54cde324.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09c30232.css",
-    "static/js/main.eada47db.js"
+    "static/js/main.17413228.js"
   ]
 }
