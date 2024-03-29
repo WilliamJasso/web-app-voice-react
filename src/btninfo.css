@@ -1,0 +1,72 @@
+.tooltip-container {
+  --background-light: #ff5555; /* Red */
+  --text-color-light: #ffffff;
+  --bubble-size: 12px;
+  --glow-color: rgba(255, 255, 255, 0.5); /* Brighter glow color */
+
+  position: fixed;
+  bottom: 30px; /* Margen de 10px desde el borde inferior */
+  right: 30px; /* Margen de 10px desde el borde derecho */
+  background: #282c34;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  padding: 0.7em 1.8em;
+  color: var(--text-color-light);
+  border-radius: 8px; /* Rounded edges */
+  box-shadow: rgb(255, 255, 255) 0 0 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Style for the bubble tooltip */
+.tooltip {
+  position: absolute;
+  width:200px;
+  
+  top: -100%; /* Initially hidden above the container */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6em 1em;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+ 
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que excede el ancho del tooltip */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos (...) al final del texto que no cabe en el tooltip */
+  border-radius: var(--bubble-size);
+  background:  #282c34;
+  box-shadow: rgb(7, 114, 246) 0px 7px 29px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Triangle arrow for the bubble tooltip */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 8px 8px 0;
+  border-color: #282c34 transparent transparent;
+}
+
+/* Tooltip appearance on hover */
+.tooltip-container:hover {
+  background-color: hsl(212, 92%, 56%);
+  color: var(--text-color-dark);
+  box-shadow: 0 0 20px var(--glow-color); /* Brighter glow effect */
+}
+
+.tooltip-container:hover .tooltip {
+  top: -120%; /* Adjusted position for the bubble tooltip */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}

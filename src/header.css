@@ -1,0 +1,13 @@
+.App-header {
+  background-color: #282c34;
+  width: 100%; /* Ancho del 100% para ocupar toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  background-color: #282c34;
+}
