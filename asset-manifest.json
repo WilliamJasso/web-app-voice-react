@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/WilliamJasso/web-app-voice-react.git/static/css/main.09c30232.css",
-    "main.js": "/WilliamJasso/web-app-voice-react.git/static/js/main.b2a80757.js",
-    "static/js/453.54cde324.chunk.js": "/WilliamJasso/web-app-voice-react.git/static/js/453.54cde324.chunk.js",
-    "index.html": "/WilliamJasso/web-app-voice-react.git/index.html",
-    "main.09c30232.css.map": "/WilliamJasso/web-app-voice-react.git/static/css/main.09c30232.css.map",
-    "main.b2a80757.js.map": "/WilliamJasso/web-app-voice-react.git/static/js/main.b2a80757.js.map",
-    "453.54cde324.chunk.js.map": "/WilliamJasso/web-app-voice-react.git/static/js/453.54cde324.chunk.js.map"
+    "main.css": "/web-app-voice-react/static/css/main.09c30232.css",
+    "main.js": "/web-app-voice-react/static/js/main.eada47db.js",
+    "static/js/453.54cde324.chunk.js": "/web-app-voice-react/static/js/453.54cde324.chunk.js",
+    "index.html": "/web-app-voice-react/index.html",
+    "main.09c30232.css.map": "/web-app-voice-react/static/css/main.09c30232.css.map",
+    "main.eada47db.js.map": "/web-app-voice-react/static/js/main.eada47db.js.map",
+    "453.54cde324.chunk.js.map": "/web-app-voice-react/static/js/453.54cde324.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09c30232.css",
-    "static/js/main.b2a80757.js"
+    "static/js/main.eada47db.js"
   ]
 }
