@@ -19,6 +19,8 @@ function App() {
     "cerrar navegador",
     "busca en google",
     "abre chat gpt",
+    "abre youtube",
+    "busca en youtube",
   ];
   const defaultWidth = 800; // Ancho predeterminado para la ventana del navegador
   const defaultHeight = 600; // Altura predeterminada para la ventana del navegador
@@ -70,6 +72,16 @@ function App() {
                 window.open(googleSearchURL, "_blank");
               }
               break;
+            case "abre youtube": // Nuevo caso
+              window.open("https://www.youtube.com", "_blank");
+              break;
+            case "busca en youtube": // Nuevo caso
+              const searchQueryYouTube = transcript.replace("busca en youtube", "").trim();
+              if (searchQueryYouTube !== "") {
+                const youTubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQueryYouTube)}`;
+                window.open(youTubeSearchURL, "_blank");
+              }
+              break;
             default:
               break;
           }
@@ -100,7 +112,7 @@ function App() {
     <div>
       <Header />
       <div className="App">
-        <p>Haz click en el botón y di una orden</p>
+        <p>Haz click en el botón y di una orden ...</p>
         <button
           id="voiceBtn"
           className={`Btn ${isListening ? "active" : ""}`}

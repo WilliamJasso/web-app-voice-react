@@ -3,7 +3,7 @@ import "./header.css";
 function Header() {
   return (
     <header className="App-header">
-      <p>Identificación por voz</p>
+      <p>Identificador por voz</p>
     </header>
   );
 }
