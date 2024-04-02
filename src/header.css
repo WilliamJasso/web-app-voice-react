@@ -1,6 +1,6 @@
 .App-header {
   background-color: #282c34;
-  width: 100%; /* Ancho del 100% para ocupar toda la pantalla */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around; 

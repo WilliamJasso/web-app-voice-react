@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import axios from "axios"; // Importa Axios para hacer solicitudes HTTP
 import "./App.css";
 import Header from "./header";
 import Loader from "./loader";
 import BtnInfo from "./btninfo";
-import microphoneIcon from "./icon-mic.png"; // Importa la imagen del icono del micrófono
+import microphoneIcon from "./icon-mic.png";
 import "./btn.css";
 
 function App() {
@@ -41,6 +42,18 @@ function App() {
       setRecognizedText(transcript);
       setTextRecognized(true); // Establecer el estado textRecognized a true cuando se reconoce el texto
 
+      // Hacer una solicitud POST con AXIOS para almacenar la orden en la API
+      axios
+        .post("https://660b579accda4cbc75dcaf79.mockapi.io/Orders", {
+          order: transcript,
+        })
+        .then(function (response) {
+          console.log("Orden almacenada con éxito:", response.data);
+        })
+        .catch(function (error) {
+          console.error("Error al almacenar la orden:", error);
+        });
+
       // Buscar la palabra específica en el texto reconocido
       for (const keyword of keywords) {
         if (transcript.includes(keyword.toLowerCase())) {
@@ -66,9 +79,13 @@ function App() {
               window.open("", "_self").close();
               break;
             case "busca en google": // Nuevo caso
-              const searchQuery = transcript.replace("busca en google", "").trim();
+              const searchQuery = transcript
+                .replace("busca en google", "")
+                .trim();
               if (searchQuery !== "") {
-                const googleSearchURL = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+                const googleSearchURL = `https://www.google.com/search?q=${encodeURIComponent(
+                  searchQuery
+                )}`;
                 window.open(googleSearchURL, "_blank");
               }
               break;
@@ -76,9 +93,13 @@ function App() {
               window.open("https://www.youtube.com", "_blank");
               break;
             case "busca en youtube": // Nuevo caso
-              const searchQueryYouTube = transcript.replace("busca en youtube", "").trim();
+              const searchQueryYouTube = transcript
+                .replace("busca en youtube", "")
+                .trim();
               if (searchQueryYouTube !== "") {
-                const youTubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQueryYouTube)}`;
+                const youTubeSearchURL = `https://www.youtube.com/results?search_query=${encodeURIComponent(
+                  searchQueryYouTube
+                )}`;
                 window.open(youTubeSearchURL, "_blank");
               }
               break;

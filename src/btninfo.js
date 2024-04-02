@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./btninfo.css";
-import googleLogo from "./logo-google.png"; // Ruta a tu archivo de imagen del logo de Google
-import chatGPTLogo from "./logo-chatgpt.png"; // Ruta a tu archivo de imagen del logo de ChatGPT
-import youtubeLogo from "./logo-youtube.png"; // Ruta a tu archivo de imagen del logo de YouTube
+import googleLogo from "./logo-google.png";
+import chatGPTLogo from "./logo-chatgpt.png";
+import youtubeLogo from "./logo-youtube.png";
 
-function BtnInfo({ onClick }) {
+function BtnInfo() {
+  const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+
   return (
-    <div className="tooltip-container">
-      <span className="tooltip">
-      <div className="tooltip-title"> Dime: </div>
+    <div
+      className="tooltip-container"
+      onMouseEnter={() => setIsTooltipVisible(true)}
+      onMouseLeave={() => setIsTooltipVisible(false)}
+    >
+      <span className={`tooltip ${isTooltipVisible ? "visible" : ""}`}>
+        <div className="tooltip-title"> Dime: </div>
         <div className="tooltip-item">"Abre una pestaña"</div>
         <br />
         {/* Logo de google */}

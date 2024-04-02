@@ -1,6 +1,6 @@
 .tooltip-container {
   --bubble-size: 12px;
-  position:absolute;
+  position: absolute;
   bottom: 40px;
   right: 40px;
   width: auto;
@@ -18,13 +18,13 @@
   font-style: normal;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente el contenido */
-  align-items: center; /* Centra horizontalmente el contenido */
+  justify-content: center;
+  align-items: center;
 }
 
 .tooltip {
   position: absolute;
-  width:fit-content;
+  width: fit-content;
   top: -50%;
   left: 50%;
   transform: translateX(-50%) translateY(-93%);
@@ -41,6 +41,7 @@
   box-shadow: rgb(244, 244, 244) 0px 0px 20px 0px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 15px;
   font-style: normal;
   justify-content: center;
   align-items: center;
@@ -54,7 +55,6 @@
   margin-bottom: 10px;
   justify-content: center;
   align-items: center;
-
 }
 
 .tooltip-item {
@@ -67,16 +67,14 @@
 .Logo {
   display: flex;
   margin-bottom: 5px;
-  justify-content: center; /* Centra verticalmente el contenido */
-  align-items: center; /* Centra horizontalmente el contenido */
-  
+  justify-content: center;
+  align-items: center;
 }
 
 .Logo img {
   width: 45px;
   height: 45px;
 }
-
 
 .tooltip::before {
   content: "";
