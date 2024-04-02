@@ -14,7 +14,7 @@ This project is a web application developed in React that utilizes voice recogni
 -   JavaScript
 -   HTML
 -   CSS
--   Axios for making HTTP requests to the Mockapi.io API
+-   AXIOS for making HTTP requests to the Mockapi.io API
 
 ## Usage
 
