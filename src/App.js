@@ -22,6 +22,7 @@ function App() {
     "abre chat gpt",
     "abre youtube",
     "busca en youtube",
+    "abre la página de ejecución",
   ];
   const defaultWidth = 800; // Ancho predeterminado para la ventana del navegador
   const defaultHeight = 600; // Altura predeterminada para la ventana del navegador
@@ -68,6 +69,9 @@ function App() {
               break;
             case "abre chat gpt":
               window.open("https://chat.openai.com/", "_blank");
+              break;
+            case "abre la página de ejecución":
+              window.open("https://williamjasso.github.io/web-app-voice-exe/", "_blank");
               break;
             case "modificar tamaño ventana":
               window.resizeTo(defaultWidth, defaultHeight);
